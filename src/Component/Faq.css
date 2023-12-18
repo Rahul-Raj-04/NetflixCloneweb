@@ -1,0 +1,25 @@
+.faq-container {
+  width: 80%;
+  background-color: gray;
+  overflow: hidden;
+  transition: max-height 1s ease-in-out;
+  max-height: 70px; /* Set an initial max height to hide content */
+}
+
+.faq-container.open {
+  max-height: 200px; /* Adjust the max height to reveal content */
+  transition: max-height 1s ease-in-out;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  cursor: pointer;
+  transition: max-height 2s ease-in-out;
+}
+
+.faq-answer {
+  background-color: gray;
+}
